@@ -1,4 +1,5 @@
 ## Table of content
+- [common setup for any web application](#common-setup-for-any-web-application)
 - [step by step project setup](#step-by-step-project-setup)
 - [Pagination set up](#pagination-set-up)
   - [totalItems determine the total number of items](#totalitems-determine-the-total-number-of-items)
@@ -18,6 +19,21 @@
   - [DirectUse: express.js set up-Backend](#directuse-expressjs-set-up-backend)
 - [Firebase-React Authentication](#firebase-react-authentication)
 
+# common setup for any web application
+1. Dynamic Page Title By Route Using React Helmet
+    ```sh
+    step-1: >npm i react-helmet-async
+    step-2: Set Helmet provider in main.jsx 
+    > <HelmetProvider>
+     <div className='max-w-screen-xl mx-auto'>
+       <RouterProvider router={router} />
+       </div>
+     </HelmetProvider>
+     step-3: use in route where want to see dynamic title
+     > <Helmet>
+     <title>Bistro Boss | Menu</title>
+     </Helmet>
+    ```
 # step by step project setup
 ## Project used technology
 - Project goal(Home/landing page, Authentication,Backend, JWT,Admin Panel,Payment getway,image Hosting,Admin only access)

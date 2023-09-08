@@ -1,14 +1,19 @@
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
   const navOptions = (
     <>
       <li>
-        <a>Item 1</a>
+        <Link to="/">Home</Link>
       </li>
       <li>
-        <a>Parent</a>
+        <Link to="/menu">Our Menu</Link>
       </li>
       <li>
-        <a>Item 3</a>
+        <a>Offer</a>
+      </li>
+      <li>
+        <a>About</a>
       </li>
     </>
   );
@@ -33,7 +38,7 @@ const Navbar = () => {
                 />
               </svg>
             </label>
-            <ul 
+            <ul
               tabIndex={0}
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow  bg-black  rounded-box w-52"
             >

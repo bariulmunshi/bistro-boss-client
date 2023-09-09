@@ -41,4 +41,4 @@
 - Simple Food Order page with tabs
 - Display food items on different tabs
 - Select right tab based on the category
-- 
+- Load menu data from server

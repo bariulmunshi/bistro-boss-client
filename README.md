@@ -247,10 +247,13 @@ jwt.verify(token,process.env.ACCESS_TOKEN_SECRET, (error,decoded)=>{
 
 - Mongodb Database connection for new database
   ```sh
+   > Database Access: create username password 
    Go to mongodb atlas site
    > Database > connect >Drivers >copy & paste it index.js file
+   > set .gitignore Before setUp .env 
    > create file(.env) for keep password
    > In index.js file: require('dotenv').config()
+   > in .env file: keep password and user 
      DB_USER=docUser
      DB_PASS=rfzGdApBdPpLH2kF
    > check:console.log(process.env.DB_PASS)
@@ -258,7 +261,6 @@ jwt.verify(token,process.env.ACCESS_TOKEN_SECRET, (error,decoded)=>{
    keep username & password
    const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.8uchuib.
    mongodb.net/?retryWrites=true&w=majority`;
-   > Database Access: create username password
   ```
 
 ### POST Method
@@ -653,6 +655,7 @@ step-4.2: In server index.js file import
    In a Node.js and Express application, the app.use(express.json()) middleware is used to parse
    incoming JSON data from client requests. When a client sends a request with JSON data in the
    request body, this middleware parses the JSON data and populates the req.body object with the parsed data}
+   > go to database setup
 ```
 
 - Additional > if I want to run data from json file
@@ -784,7 +787,7 @@ step-4.2: In server index.js file import
   app.listen(port,()=>{
     console.log(`Simple crud is running:${port}`);
   })
-
+ > go to database setup
  step-6: import code from atlas dbms
  step-7: set password carefully and see the server is pinged or not
  step-8: Now go to for > set up client side

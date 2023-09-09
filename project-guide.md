@@ -32,7 +32,13 @@
 6. Show shared Popular menu items in the home page 
 7. Featured items section
 8. Create Parallax and Add Testimonials with react rating
-9. Added BristoBoss section
+9. Added Bistro Boss section
 ## Final Project part-2
 - Dynamic Page Title By Route Using React Helmet
-
+- Implement Cover With With Blur Parallax Using React Parallax
+- Create Custom Hook UseMenu To Load Menu Data
+- Display different menu category items with cover
+- Simple Food Order page with tabs
+- Display food items on different tabs
+- Select right tab based on the category
+- 

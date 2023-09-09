@@ -1,6 +1,5 @@
 ## Table of content
 - [common setup for any web application](#common-setup-for-any-web-application)
-- [step by step project setup](#step-by-step-project-setup)
 - [Pagination set up](#pagination-set-up)
   - [totalItems determine the total number of items](#totalitems-determine-the-total-number-of-items)
   - [Decide the total number of item per page](#decide-the-total-number-of-item-per-page)
@@ -34,13 +33,7 @@
      <title>Bistro Boss | Menu</title>
      </Helmet>
     ```
-# step by step project setup
-## Project used technology
-- Project goal(Home/landing page, Authentication,Backend, JWT,Admin Panel,Payment getway,image Hosting,Admin only access)
-- React Router
-- Tailwind
-- DaisyUI
-- React awesome components
+
 # Pagination set up 
 ### totalItems: determine the total number of items
   ```sh

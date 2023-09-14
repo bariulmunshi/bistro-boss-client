@@ -265,6 +265,16 @@ jwt.verify(token,process.env.ACCESS_TOKEN_SECRET, (error,decoded)=>{
 
 ### POST Method
 
+- create database & collection name
+
+  ```sh
+   > const database = client.db("usersDB");
+     const usersCollection = database.collection("users");
+
+   or
+   > const coffeeCollection=client.db('coffeeDB').collection('coffee');
+  ```
+
 - create POST Method api in backend
   ```sh
     > app.post("/coffee", async (req, res) => {
@@ -285,15 +295,6 @@ jwt.verify(token,process.env.ACCESS_TOKEN_SECRET, (error,decoded)=>{
       .then((data) => {
         console.log(data);
       });
-  ```
-- create database & collection name
-
-  ```sh
-   > const database = client.db("usersDB");
-     const usersCollection = database.collection("users");
-
-   or
-   > const coffeeCollection=client.db('coffeeDB').collection('coffee');
   ```
 
 - In POST method API >send server data to Database

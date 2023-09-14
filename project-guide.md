@@ -42,3 +42,4 @@
 - Display food items on different tabs
 - Select right tab based on the category
 - Load menu data from server
+## Final Project part-3
